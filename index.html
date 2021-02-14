@@ -54,7 +54,7 @@
           Эффективные решения<br />
           для вашего бизнеса
         </h1>
-        <button type="button" class="modal-btn">Заказать услугу</button>
+        <button type="button" class="modal-btn" data-modal-open"">Заказать услугу</button>
       </section>
       <section class="features-section">
         <div class="container">
@@ -98,20 +98,23 @@
             <li class="products-item">
               <img
                 src="./images/index-images/box1.jpg"
-                alt="Человек работает на компьютере"
+                alt="Компьютер"
                 width="370"/>
+                <div class="productstitle">Десктопные приложения</div>
             </li>
             <li class="products-item">
               <img
                 src="./images/index-images/box2.jpg"
-                alt="Человек с смарт-фоном в руке"
+                alt="Смартфон"
                 width="370"/>
+                <div class="productstitle">Мобильные прилодения</div>
             </li>
             <li class="products-item">
               <img
                 src="./images/index-images/box3.jpg"
-                alt="Человек работает на планшете"
+                alt="Планшет"
                 width="370"/>
+                <div class="productstitle">Дизайнерские решения</div>
             </li>
           </ul>
         </div>
@@ -358,5 +361,13 @@
       </div>
       </div>
     </footer>
+    <div class="backdrop " data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" data-modal-close><svg class="modal-btn-icon" width="11" height="11">
+            <use href="./images/close.svg"></use>
+          </svg></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
