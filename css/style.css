@@ -11,10 +11,12 @@
   --header-line-color: #ececec;
   --border-line-color: #eeeeee;
   --icon-color: #afb1b8;
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(--primary-bg-color);
 }
 
@@ -50,9 +52,24 @@ img {
 .current {
   color: var(--accent-color);
 }
+.link.current {
+  position: relative;
+}
+
+.link.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  transition: transform 500ms linear;
+}
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
@@ -174,7 +191,7 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url('../images/index-images/hero.jpg');
+  background-image: url("../images/index-images/hero.jpg");
   background-size: cover;
 }
 
@@ -246,7 +263,7 @@ img {
   background-image: url(../images/astronaut.svg);
 }
 .features-section .list-item::before {
-  content: '';
+  content: "";
   display: block;
   height: 120px;
   background-repeat: no-repeat;
