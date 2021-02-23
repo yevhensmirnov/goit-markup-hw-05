@@ -138,6 +138,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-txt-color);
   text-decoration: none;
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .site-nav .link.current,
@@ -170,6 +171,7 @@ img {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .contacts .link:hover,
@@ -367,6 +369,9 @@ img {
   width: 44px;
   height: 44px;
   fill: #afb1b8;
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function);
 }
 .team-item-content .social-link:hover,
 .team-item-content .social-link:focus {
@@ -397,6 +402,8 @@ img {
   color: var(--icon-color);
   fill: currentColor;
   border: 1px solid var(--icon-color);
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    border var(--transition-duration) var(--transition-timing-function);
 }
 .logo-link:hover,
 .logo-link:focus {
@@ -447,6 +454,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--footer-contacts-color);
   text-decoration: none;
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .footer-contact-item > .email {
@@ -491,6 +499,8 @@ img {
   border-radius: 50%;
   color: var(--additional-txt-color);
   fill: currentColor;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 .social-list-item .social-link:hover,
 .social-list-item .social-link:focus {
@@ -538,6 +548,7 @@ img {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  background-color: transparent;
   cursor: pointer;
 }
 .modal-btn-icon {
@@ -561,6 +572,10 @@ img {
   padding: 6px 22px;
   border-radius: 4px;
   outline: none;
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function);
 }
 
 .select-btn:hover,
@@ -627,6 +642,8 @@ img {
   display: block;
   width: 100%;
   height: 100%;
+  transition: box-shadow var(--transition-duration)
+    var(--transition-timing-function);
 }
 .projects .link:hover,
 .projects .link:focus {
