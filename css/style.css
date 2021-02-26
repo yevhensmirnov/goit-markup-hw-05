@@ -153,6 +153,11 @@ img {
 .header .contacts {
   margin-bottom: 0;
   display: flex;
+  align-items: center;
+}
+.header-contact {
+  display: flex;
+  align-items: center;
 }
 
 .contacts.list {
@@ -186,14 +191,22 @@ img {
 .contacts-icon:hover {
   fill: var(--accent-color);
 }
+.contacts .list-item {
+  display: inline-flex;
+}
 
 .hero {
-  background-color: #2f303a;
+  background-color: #c4c4c4;
   width: auto;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url("../images/index-images/hero.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/index-images/hero.jpg");
   background-size: cover;
 }
 
@@ -368,6 +381,8 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
   fill: #afb1b8;
   transition: color var(--transition-duration) var(--transition-timing-function),
     background-color var(--transition-duration)
@@ -505,6 +520,59 @@ img {
 .social-list-item .social-link:hover,
 .social-list-item .social-link:focus {
   background-color: var(--accent-color);
+}
+.subscribe-wrapper {
+  margin-left: auto;
+}
+.subscribe-form {
+  display: flex;
+}
+.subscribe-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--additional-txt-color);
+}
+.input-field {
+  padding: 15px 16px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--additional-txt-color);
+}
+.input-field::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-btn {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 10px 28px;
+  background-color: var(--accent-color);
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--additional-txt-color);
 }
 .backdrop {
   position: fixed;
